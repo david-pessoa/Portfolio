@@ -47,7 +47,7 @@
 			"linkExterno": "",
 			"imagemHome": "images/portfolio/estacao-meteorologica.png",
 			"imagemHero": "../images/portfolio/estacao-meteorologica.png",
-			"skills": "HTML;CSS;JavaScript;Bootstrap;Python;Django;PostgreSQL",
+			"skills": "HTML;CSS;JavaScript;Bootstrap;Python;Django;SQLite",
 			"descricao": "A fim de desenvolver minhas habilidades com o framework do Django do Python (e um pouco de front-end também), resolvi criar uma aplicação de um site sobre o tempo, me inspirando no site da estação meteorológica do Mackenzie que desenvolvi enquanto estive na empresa júnior Mackleaps. O front-end do site, constituído de HTML + CSS + JavaScript e Bootstrap, conta com apenas uma única página, em que o usuário digita o nome de alguma cidade do Brasil ou do mundo no campo de busca e a API da WeatherAPI devolve as informações climáticas do local, que são exibidas num dashboard.\nJá o back-end é integrado a um banco de dados PostgreSQL, que guarda dados de todas as capitais do Brasil, repassa os nomes das capitais brasileiras para o front-end exibir abaixo do input, criando um autocomplete para auxiliar o usuário a encontrar as informações sobre o tempo da cidade que desejada, aumentando a usabilidade do website.\nO principal desafio deste projeto foi aprender a como usar o Bootstrap numa aplicação web, manipular elementos HTML usando o DOM e configurar gráficos no JavaScript usando a biblioteca Chart.js. Caso tenha interesse, acesse aqui <a href='https://github.com/david-pessoa/EstacaoMeteorologica' target='_blank'>o repositório do projeto no GitHub</a>."
 		},
 		{

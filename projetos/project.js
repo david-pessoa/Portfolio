@@ -54,6 +54,7 @@ export function loadProjectPage() {
 		AWS: 'aws',
 		Docker: 'docker',
 		PostgreSQL: 'postgresql',
+		SQLite: 'sql',
 		SQL: 'sql',
 		LLM: 'llm',
 		RAG: 'rag',
