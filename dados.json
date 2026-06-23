@@ -57,7 +57,7 @@
 			"linkExterno": "",
 			"imagemHome": "images/portfolio/banco-django.png",
 			"imagemHero": "../images/portfolio/banco-django.png",
-			"skills": "HTML;CSS;JavaScript;Bootstrap;Python;Django;PostgreSQL",
+			"skills": "HTML;CSS;JavaScript;Bootstrap;Python;Django;MySQL",
 			"descricao": "Assim como o projeto da Estação Meteorológica, este é mais outro projeto meu para me aprimorar no framework Django e no front-end que desenvolvi em dezembro de 2024. Nessa aplicação, o usuário pode criar um cadastro usando um CPF válido e acessar sua conta para realizar saques, depósitos e até transferências por PIX, que podem ser consultadas na tabela de histórico de transações.\nO que foi desafiador neste projeto foi aprender a usar o Django como um todo, pois ainda estava iniciando meu aprendizado neste framework. Sendo assim, foi difícil montar o back-end, que realiza as operações de CRUD no banco de dados PostgreSQL e deve atualizar as informações no front-end corretamente. Além disso, tive dificuldade em elaborar a tabela do histórico de transações e a validação do conteúdo nos inputs dos formulários de cadastro, mas consegui encontrar uma solução aplicando as bibliotecas datatables  e Parsley.js respectivamente. Caso tenha interesse, acesse aqui <a href='https://github.com/david-pessoa/Banco_do_Django' target='_blank'>o repositório do projeto no GitHub</a>."
 		},
 		{
