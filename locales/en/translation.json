@@ -10,8 +10,7 @@
 	},
 	"intro": {
 		"title": "I'm David Pessoa",
-		"job1": "Full Stack Developer",
-		"job2": "Computer Scientist",
+		"job": "<span>Full Stack</span> Front-end Developer",
 		"button": "More about me"
 	},
 	"about": {

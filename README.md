@@ -1,108 +1,73 @@
 # Portfólio - David Pessoa
+Portfólio pessoal com apresentação profissional, projetos, certificados, habilidades e contato.
+O site é estático, responsivo e organizado para exibir conteúdos em português e inglês.
 
-Este repositório contém o código-fonte do meu portfólio pessoal, publicado em [davidpessoa.com.br](https://davidpessoa.com.br). O projeto apresenta minha trajetória profissional, formação, habilidades técnicas, certificados, projetos desenvolvidos e canais de contato.
+## Problema
+Facilitar a apresentação da minha trajetória, experiências e projetos em um único lugar, com navegação simples, conteúdo atualizado e acesso rápido para recrutadores, parceiros e visitantes.
 
-## Descrição
+## Solução
+Foi construído um portfólio web leve e sem build, com página inicial em formato one page, seção dedicada a projetos e conteúdo carregado dinamicamente a partir de arquivos JSON. O site também suporta troca de idioma e componentes reutilizáveis.
 
-O site foi construído como uma aplicação web estática, usando HTML, CSS e JavaScript. A página inicial funciona no formato de one page, com navegação por seções, enquanto os detalhes de cada projeto são carregados em uma rota separada a partir de dados centralizados no arquivo `dados.json`.
-
-O portfólio também possui suporte a internacionalização em português e inglês, componentes HTML reutilizáveis para header e contato, listagem dinâmica de projetos, certificados e habilidades, além de metadados Open Graph para melhorar o compartilhamento em redes sociais.
-
-## Principais Funcionalidades
-
+## Funcionalidades
 - Apresentação pessoal com links para LinkedIn, WhatsApp, e-mail e GitHub.
-- Seções de currículo, formação, habilidades, projetos, certificados e contato.
-- Página individual para cada projeto.
-- Conteúdo dinâmico carregado a partir de `dados.json`.
-- Suporte a múltiplos idiomas com `i18next`.
-- Carrossel de certificados com Swiper.
-- Layout responsivo baseado no template Kards.
-- Arquivos de currículo em PDF na pasta `CV-file`.
+- Seções de resumo profissional, habilidades, projetos, certificados e contato.
+- Página individual para cada projeto com descrição detalhada e mídias associadas.
+- Suporte a português e inglês via `i18next`.
+- Carregamento dinâmico de listas de projetos, certificados e skills a partir de `dados.json`.
+- Layout responsivo com carrossel de certificados e navegação por seções.
 
-## Ferramentas e Tecnologias Utilizadas
+## Tecnologias
+- HTML5
+- CSS3
+- JavaScript
+- jQuery
+- i18next
+- Swiper
+- Masonry
+- imagesLoaded
+- Font Awesome
+- JSON como fonte de dados
+- Hospedagem estática via GitHub Pages / domínio próprio
 
-- **HTML5**: usado para estruturar as páginas e seções do portfólio de forma simples e sem necessidade de build.
-- **CSS3**: usado para estilização, responsividade e adaptação visual do template base.
-- **JavaScript**: usado para carregar componentes, renderizar listas dinâmicas, controlar idioma, menu, scroll suave e página de projetos.
-- **jQuery**: mantido por compatibilidade com o template Kards e seus plugins de animação, validação, navegação e manipulação do DOM.
-- **i18next**: usado para internacionalização, permitindo alternar o conteúdo entre `pt-BR` e `en`.
-- **Swiper**: usado para criar o carrossel responsivo de certificados.
-- **Masonry / imagesLoaded**: usados para organizar a grade de projetos depois que as imagens são carregadas.
-- **Font Awesome**: usados para exibir ícones de redes sociais, navegação e elementos visuais.
-- **JSON**: usado como fonte de dados simples para projetos, certificados e habilidades, facilitando manutenção sem precisar alterar diretamente o HTML.
+## Arquitetura
+O fluxo principal funciona assim:
 
-## Por Que Essas Ferramentas Foram Escolhidas
+`dados.json` e `locales/*/translation.json` -> `js/loadLists.js` e `js/i18n.js` -> renderização dos blocos no `index.html` e na página `projetos/index.html`.
 
-O projeto usa uma stack estática porque o objetivo é ter um portfólio leve, fácil de hospedar no GitHub Pages e simples de manter. HTML, CSS e JavaScript são suficientes para entregar a experiência principal sem dependências pesadas ou processo de compilação.
+Em alto nível, a home monta os conteúdos dinâmicos de habilidades, projetos e certificados, enquanto a página de detalhes usa o `id` da URL para buscar o projeto correto em `dados.json` e exibir título, descrição, skills e mídia.
 
-O `dados.json` foi utilizado para separar conteúdo e estrutura. Dessa forma, novos projetos, certificados e habilidades podem ser adicionados alterando apenas os dados, enquanto os scripts cuidam da renderização na interface.
-
-O `i18next` foi escolhido para tornar o site acessível em mais de um idioma, mantendo os textos organizados em arquivos de tradução dentro da pasta `locales`.
-
-O Swiper foi usado porque oferece um carrossel responsivo pronto e confiável para os certificados. Já o jQuery e os plugins existentes foram mantidos porque fazem parte do template original Kards e continuam atendendo bem às interações do site.
-
-## Estrutura do Projeto
-
-```text
-.
-├── index.html                 # Página inicial do portfólio
-├── dados.json                 # Dados de projetos, certificados e habilidades
-├── components/                # Componentes HTML reutilizáveis
-│   ├── header.html
-│   └── contact.html
-├── css/                       # Estilos principais, base e ícones
-├── js/                        # Scripts de carregamento, i18n e interações
-├── projetos/                  # Página de detalhes dos projetos
-│   ├── index.html
-│   ├── project.css
-│   └── project.js
-├── locales/                   # Arquivos de tradução
-│   ├── en/translation.json
-│   └── pt-BR/translation.json
-├── images/                    # Imagens do site, projetos, certificados e skills
-├── fonts/                     # Fontes locais
-└── CV-file/                   # Currículos em PDF
-
-```
-
-## Rotas
-
-| Rota | Descrição |
-| --- | --- |
-| `/` | Página inicial do portfólio. |
-| `/#intro` | Seção inicial/apresentação. |
-| `/#about` | Seção sobre mim. |
-| `/#resume` | Seção de currículo e experiências. |
-| `/#skills` | Seção de habilidades técnicas. |
-| `/#portfolio` | Lista de projetos. |
-| `/#certificate` | Lista/carrossel de certificados. |
-| `/#contact` | Seção de contato. |
-| `/projetos/?id=N` | Página de detalhes do projeto correspondente à posição `N` no array `projetos` de `dados.json`. |
-| `/?lang=pt-BR` | Abre a página inicial em português. |
-| `/?lang=en` | Abre a página inicial em inglês. |
-
-## Como Executar Localmente
-
-Como o projeto carrega arquivos via `fetch`, o ideal é executá-lo com um servidor local em vez de abrir o `index.html` diretamente no navegador.
-
-Uma opção simples é usar:
+## Como rodar
+O projeto não depende de instalação de pacotes. Para rodar localmente, use um servidor estático:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Depois, acesse:
+Depois acesse:
 
 ```text
 http://localhost:8000
 ```
 
-## Como Adicionar Novos Conteúdos
+Se preferir, também é possível usar qualquer servidor estático equivalente.
 
-Para adicionar um novo projeto, edite o array `projetos` em `dados.json` e, se necessário, acrescente as traduções correspondentes em `locales/en/translation.json` e `locales/pt-BR/translation.json`.
+## Prints
+### Mobile
+![Mobile-image](./images/prints/mobile.png)
 
-Para adicionar certificados ou habilidades, edite as respectivas seções `certificados` e `skills` em `dados.json`.
+### Desktop
+![Desktop-image](./images/prints/desktop.png)
 
-## Créditos
+## Decisões técnicas
+- O projeto foi mantido como site estático para facilitar deploy e manutenção.
+- O conteúdo foi separado em `dados.json` para reduzir dependência de HTML repetido e simplificar atualizações.
+- A internacionalização foi centralizada em arquivos de tradução para manter os textos organizados por idioma.
+- Bibliotecas legadas do template original, como `jQuery` e plugins associados, foram mantidas por compatibilidade e para evitar uma refatoração maior.
+- A página de detalhes de projeto usa parâmetro de URL em vez de rotas complexas, o que simplifica a navegação em hospedagem estática.
 
-O layout foi adaptado a partir do template Kards, da Styleshout. O arquivo `readme.txt` original foi mantido no projeto com informações de licença, créditos e recursos utilizados pelo template base.
+## Melhorias futuras
+- Adicionar prints reais de desktop e mobile na seção de mídia.
+- Atualizar a base do front-end para reduzir dependências antigas do template.
+- Melhorar a acessibilidade com revisão de contraste, foco e navegação por teclado.
+- Automatizar a geração de uma versão em inglês do README.
+- Evoluir a arquitetura para componentes mais modulares, caso o site cresça.
