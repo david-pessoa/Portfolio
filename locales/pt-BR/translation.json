@@ -11,7 +11,8 @@
 	"intro": {
 		"title": "Sou David Pessoa",
 		"job": "Desenvolvedor Full Stack <span>Front-end</span>",
-		"button": "Mais sobre mim"
+		"buttonMoreAbout": "Mais sobre mim",
+		"buttonDownloadCV": "Download CV"
 	},
 	"about": {
 		"subTitle": "Sobre mim",
@@ -33,7 +34,7 @@
 			"roleName": "Desenvolvedor Front-end",
 			"period": "Março 2023 - Nov 2023",
 			"company": "Mackleaps",
-			"description": "Durante o ano de 2023, trabalhei na Empresa Júnior Mackleaps como voluntário para desenvolver o front-end (utilizando HTML, CSS, Javascript e React.js) de uma aplicação web para exibição dos dados do clima e tempo no campus do Mackenzie. <a href='https://mackleaps.mackenzie.br/grafana/public-dashboards/4d1d71b3511f4151b6c042dbbbef965b?orgId=1&from=now-7d&to=now&timezone=browser' target='_blank'>Clique aqui</a> para ver o website."
+			"description": "Durante o ano de 2023, trabalhei na Empresa Júnior Mackleaps como voluntário para desenvolver o front-end (utilizando HTML, CSS, Javascript e React.js) de uma aplicação web para exibição dos dados do clima e tempo no campus do Mackenzie."
 		},
 		"subTitleAcademicXP": "Formação Acadêmica",
 		"devFullstack": {

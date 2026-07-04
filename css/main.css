@@ -1524,7 +1524,7 @@ header nav ul li .language:hover {
 .intro-content .button:focus {
 	border-color: var(--dark-blue);
 }
-.intro-content .button::after {
+.intro-content .button.smoothscroll::after {
 	display: inline-block;
 	content: '\f107';
 	font-family: fontAwesome;
@@ -1557,6 +1557,20 @@ header nav ul li .language:hover {
 .intro-social li a:hover,
 .intro-social li a:focus {
 	color: var(--dark-blue);
+}
+.intro-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 6rem;
+}
+
+.intro-content .button.transparent-border {
+	border: 3px solid transparent;
+	background-color: rgba(47, 169, 221, 0.68);
+}
+
+.intro-content .button.transparent-border:hover {
+	background-color: var(--dark-blue);
 }
 
 /**
@@ -1618,6 +1632,13 @@ header nav ul li .language:hover {
 	.intro-content .intro-position span::after {
 		display: none !important;
 	}
+
+	.intro-buttons {
+		align-items: center;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
 	.intro-social {
 		font-size: 2.4rem;
 	}

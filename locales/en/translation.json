@@ -11,7 +11,8 @@
 	"intro": {
 		"title": "I'm David Pessoa",
 		"job": "<span>Full Stack</span> Front-end Developer",
-		"button": "More about me"
+		"buttonMoreAbout": "More about me",
+		"buttonDownloadCV": "Download CV"
 	},
 	"about": {
 		"subTitle": "About me",
@@ -33,7 +34,7 @@
 			"roleName": "Front-end Developer",
 			"period": "March 2023 - Nov 2023",
 			"company": "Mackleaps",
-			"description": "In 2023, I worked as a volunteer at Mackleaps Junior Company to develop the front-end (using HTML, CSS, Javascript and React.js) of a web application to display weather data from stations located on the Mackenzie campus. <a href='https://mackleaps.mackenzie.br/grafana/public-dashboards/4d1d71b3511f4151b6c042dbbbef965b?orgId=1&from=now-7d&to=now&timezone=browser' target='_blank'>Click here</a> to see the website."
+			"description": "In 2023, I worked as a volunteer at Mackleaps Junior Company to develop the front-end (using HTML, CSS, Javascript and React.js) of a web application to display weather data from stations located on the Mackenzie campus."
 		},
 		"subTitleAcademicXP": "Academic Education",
 		"devFullstack": {
