@@ -2374,10 +2374,10 @@ a[title='Download CV'].button.button-primary {
 .certificate-list {
 	margin-top: 1.2rem;
 	text-align: center;
+	padding-bottom: 3rem;
 }
 .certificate-list .swiper-slide {
 	margin-bottom: 1.2rem;
-	padding: 0 30px;
 }
 .certificate-list .icon {
 	display: inline-block;
@@ -2402,11 +2402,10 @@ a[title='Download CV'].button.button-primary {
 }
 
 /* pagination */
-.swiper-pagination {
+span.swiper-pagination.swiper-pagination-clickable {
 	text-align: center;
 	width: 100%;
-	margin-top: 40px;
-	bottom: -0px !important;
+	top: 51rem;
 }
 .swiper-pagination .swiper-pagination-bullet {
 	height: 1.4rem;
@@ -2437,29 +2436,51 @@ a[title='Download CV'].button.button-primary {
  * certificate
  * -------------------------------------------------------------------
  */
-@media only screen and (max-width: 1325px) {
-	.owl-theme .owl-controls .owl-buttons .owl-prev {
-		left: 0px;
-	}
-
-	.owl-theme .owl-controls .owl-buttons .owl-next {
-		right: 0px;
-	}
-}
-@media only screen and (max-width: 768px) {
-	.owl-theme .owl-controls .owl-buttons div::before {
-		font-size: 4rem; /* Tamanho do ícone */
+@media only screen and (max-width: 900px) {
+	.certificate-list .icon img {
+		width: 450px;
+		height: auto;
 	}
 }
 @media only screen and (max-width: 600px) {
-	.owl-theme .owl-controls .owl-buttons div::before {
-		font-size: 2.3rem; /* Tamanho do ícone */
+	.certificate-list h3 {
+		margin: 0 30px 5px 30px;
+		font-size: 1.8rem;
+	}
+	.certificate-list .icon img {
+		width: 300px;
+	}
+	button.swiper-button-next,
+	button.swiper-button-prev {
+		top: 140px;
+	}
+	span.swiper-pagination.swiper-pagination-clickable {
+		top: 38rem;
 	}
 }
 @media only screen and (max-width: 400px) {
+	button.swiper-button-next,
+	button.swiper-button-prev {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	button.swiper-button-next {
+		right: 0;
+	}
+	button.swiper-button-prev {
+		left: 0;
+	}
+
+	button.swiper-button-next:after,
+	button.swiper-button-prev:after {
+		font-size: 30px;
+	}
 	.certificate-list .icon img {
-		height: 200px;
-		width: auto;
+		width: 250px;
+	}
+	span.swiper-pagination.swiper-pagination-clickable {
+		top: 36rem;
 	}
 }
 
