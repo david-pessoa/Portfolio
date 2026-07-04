@@ -73,6 +73,35 @@
 		<header></header>
 		<!-- /header -->
 
+		<!-- Change Language Nav
+   ================================================== -->
+		<nav class="lang-nav">
+			<ul class="lang-list">
+				<li>
+					<button
+						id="btn-pt"
+						onclick="changeLanguage('pt-BR')"
+						class="language"
+					>
+						<img src="./images/lang/brasil.png" alt="PT-BR Icon" /><span
+							>PT</span
+						>
+					</button>
+				</li>
+				<li>
+					<button id="btn-en" onclick="changeLanguage('en')" class="language">
+						<img src="./images/lang/estados-unidos.png" alt="EN Icon" /><span
+							>EN</span
+						>
+					</button>
+				</li>
+			</ul>
+			<button id="langListCloseButton">
+				<i class="fa-solid fa-angle-down"></i>
+			</button>
+		</nav>
+		<!-- /Change Language Nav -->
+
 		<!-- intro section
    ================================================== -->
 		<section id="intro">
@@ -87,6 +116,10 @@
 						<p class="intro-position" data-i18n="intro.job">
 							Desenvolvedor Full Stack
 							<span>Front-end</span>
+						</p>
+						<p style="display: none">
+							Crio interfaces responsivas, APIs e aplicacoes web integradas a
+							dados, automacao e inteligencia artificial.
 						</p>
 						<div class="intro-buttons">
 							<a

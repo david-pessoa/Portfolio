@@ -165,7 +165,6 @@ import { changeLanguage } from './i18n.js';
 				const sectionId = activeSection.attr('id');
 
 				$('#main-nav-wrap li').removeClass('current');
-				console.log(sectionId);
 
 				$(`#main-nav-wrap a[href="/#${sectionId}"]`)
 					.parent()

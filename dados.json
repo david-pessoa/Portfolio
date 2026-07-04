@@ -172,8 +172,8 @@
 				"iconPath": "./images/skills-icons/bootstrap.svg"
 			},
 			{ "name": "React", "iconPath": "./images/skills-icons/react.svg" },
-			{ "name": "Next.js", "iconPath": "./images/skills-icons/nextjs.svg" },
-			{ "name": "Svelte", "iconPath": "./images/skills-icons/svelte.svg" }
+			{ "name": "Next.js", "iconPath": "./images/skills-icons/nextjs.svg" }
+			
 		]
 	}
 }

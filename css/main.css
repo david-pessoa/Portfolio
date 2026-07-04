@@ -1199,7 +1199,7 @@ input::-moz-focus-inner {
  */
 header {
 	position: fixed;
-	width: 100%;
+	width: 40%;
 	min-height: 66px;
 	z-index: 600;
 }
@@ -1233,14 +1233,36 @@ header .logo a {
 	text-shadow: none;
 }
 
-header nav ul #changelanguage {
+.lang-nav {
+	width: 150px;
+	background-color: #000;
+	position: fixed;
+	z-index: 20;
+	right: 10vw;
+	padding-top: 15px;
 	display: flex;
-	flex-direction: row;
-	gap: 1rem;
-	align-items: center;
+	gap: 10px;
 }
 
-header nav ul li .language {
+.lang-nav #langListCloseButton {
+	padding: 0;
+	background-color: transparent;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+.lang-nav #langListCloseButton:hover {
+	color: var(--dark-blue);
+}
+
+.lang-nav ul {
+	list-style: none;
+}
+
+.lang-nav ul li button.language {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
 	background: none;
 	border: none;
 	color: white;
@@ -1248,14 +1270,20 @@ header nav ul li .language {
 	padding: 0;
 	margin: 0;
 }
+.lang-nav ul li button img {
+	height: 50px;
+}
+.lang-nav ul li button span {
+	font-size: 1.5rem;
+}
 
-header nav ul li .language.active {
+.lang-nav ul li button.language.active {
 	color: var(--dark-blue);
 	font-weight: bold;
 	text-decoration: underline;
 }
 
-header nav ul li .language:hover {
+.lang-nav ul li button.language:hover {
 	color: var(--dark-blue);
 }
 
@@ -1422,6 +1450,17 @@ header nav ul li .language:hover {
 	header .top-bar {
 		left: 25px;
 	}
+	.lang-nav {
+		width: 90px;
+		right: 10px;
+		padding-top: 8px;
+	}
+	.lang-nav ul li button img {
+	height: 20px;
+}
+.lang-nav ul li button span {
+	font-size: 1rem;
+}
 }
 
 /** 
