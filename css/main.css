@@ -1242,17 +1242,25 @@ header .logo a {
 	padding-top: 15px;
 	display: flex;
 	gap: 10px;
+	transition: all 0.3s ease-in-out;
+}
+.lang-nav.closed {
+	height: 70px;
+	overflow: hidden;
 }
 
-.lang-nav #langListCloseButton {
+.lang-nav #langListDropButton {
 	padding: 0;
 	background-color: transparent;
 	color: #fff;
 	transition: all 0.3s ease-in-out;
 	cursor: pointer;
 }
-.lang-nav #langListCloseButton:hover {
+.lang-nav #langListDropButton:hover {
 	color: var(--dark-blue);
+}
+.lang-nav #langListDropButton.closed {
+	transform: rotate(-180deg);
 }
 
 .lang-nav ul {
@@ -1455,12 +1463,18 @@ header .logo a {
 		right: 10px;
 		padding-top: 8px;
 	}
+	.lang-nav .lang-list {
+		padding-right: 8px;
+	}
+	.lang-nav.closed {
+		height: 70px;
+	}
 	.lang-nav ul li button img {
-	height: 20px;
-}
-.lang-nav ul li button span {
-	font-size: 1rem;
-}
+		height: 20px;
+	}
+	.lang-nav ul li button span {
+		font-size: 1rem;
+	}
 }
 
 /** 

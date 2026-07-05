@@ -149,6 +149,12 @@ import { changeLanguage } from './i18n.js';
 		$('.main-navigation').fadeOut();
 	});
 
+	$(document).on('click', '#langListDropButton', function () {
+		$('.lang-nav').toggleClass('closed')
+		$('#langListDropButton').toggleClass('closed')
+
+	})
+
 	/*---------------------------------------------------- */
 	/* Highlight the current section in the navigation bar
   	------------------------------------------------------ */
