@@ -11,10 +11,35 @@ import {
 	loadSkillsList,
 } from './loadLists.js';
 import { loadComponent } from './loadComponents.js';
-import { changeLanguage } from './i18n.js';
+import { changeLanguage, getCurrentLanguage } from './i18n.js';
+
+export function changeLanguageListOrder() {
+		const currentLanguage = getCurrentLanguage();
+		const navLangList = document.getElementById('navLangList');
+		const pt = document.getElementById('pt-item');
+		const en = document.getElementById('en-item');
+
+		if (currentLanguage === 'pt-BR') {
+			pt.classList.add('selected');
+			en.classList.remove('selected');
+			navLangList.appendChild(pt);
+			navLangList.appendChild(en);
+		} else {
+			en.classList.add('selected');
+			pt.classList.remove('selected');
+			navLangList.appendChild(en);
+			navLangList.appendChild(pt);
+		}
+	}
 
 (function ($) {
 	'use strict';
+
+	//Toggle language modal
+	function toggleLanguageModal() {
+		$('.lang-nav').toggleClass('closed');
+		$('#langListDropButton').toggleClass('closed');
+	}
 
 	/*---------------------------------------------------- */
 	/* Change language based on the parameter (if given)
@@ -24,6 +49,8 @@ import { changeLanguage } from './i18n.js';
 		const params = new URLSearchParams(window.location.search);
 		const language = params.get('lang');
 		if (language) changeLanguage(language);
+		toggleLanguageModal();
+		changeLanguageListOrder();
 	});
 
 	/*---------------------------------------------------- */
@@ -145,15 +172,16 @@ import { changeLanguage } from './i18n.js';
 	// Clique nos links do menu
 	$(document).on('click', '.main-navigation li a', function () {
 		$('.menu-toggle').removeClass('is-clicked');
-
 		$('.main-navigation').fadeOut();
 	});
 
+	/*-----------------------------------------------------*/
+	/* Menu de troca de idioma
+   ------------------------------------------------------ */
 	$(document).on('click', '#langListDropButton', function () {
-		$('.lang-nav').toggleClass('closed')
-		$('#langListDropButton').toggleClass('closed')
-
-	})
+		toggleLanguageModal();
+		// changeLanguageListOrder();
+	});
 
 	/*---------------------------------------------------- */
 	/* Highlight the current section in the navigation bar

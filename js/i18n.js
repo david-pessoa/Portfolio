@@ -1,5 +1,6 @@
 import { loadProjectPage } from '../projetos/project.js';
 import { loadProjectsList, loadCertificatesList } from './loadLists.js';
+import { changeLanguageListOrder} from './main.js'
 
 async function i18nextInit() {
 	await i18next
@@ -18,12 +19,17 @@ async function i18nextInit() {
 	updateContent();
 }
 
+export function getCurrentLanguage() {
+  return i18next.resolvedLanguage || i18next.language;
+}
+
 function updateContent() {
 	const elements = document.querySelectorAll('[data-i18n]');
 	elements.forEach((el) => {
 		const key = el.getAttribute('data-i18n');
 		el.innerHTML = i18next.t(key);
 	});
+	changeLanguageListOrder()
 }
 
 i18next.on('languageChanged', () => {

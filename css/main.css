@@ -1239,14 +1239,18 @@ header .logo a {
 	position: fixed;
 	z-index: 20;
 	right: 10vw;
-	padding-top: 15px;
 	display: flex;
 	gap: 10px;
-	transition: all 0.3s ease-in-out;
+	transition: max-height 0.3s ease-in-out;
+	max-height: 140px;
 }
 .lang-nav.closed {
-	height: 70px;
+	max-height: 60px;
 	overflow: hidden;
+}
+
+.lang-nav .lang-list {
+	margin-left: 0.5rem;
 }
 
 .lang-nav #langListDropButton {
@@ -1267,6 +1271,10 @@ header .logo a {
 	list-style: none;
 }
 
+.lang-nav .lang-list li {
+	margin-bottom: 5px;
+}
+
 .lang-nav ul li button.language {
 	display: flex;
 	align-items: center;
@@ -1285,10 +1293,9 @@ header .logo a {
 	font-size: 1.5rem;
 }
 
-.lang-nav ul li button.language.active {
-	color: var(--dark-blue);
-	font-weight: bold;
-	text-decoration: underline;
+.lang-nav ul li.selected button.language {
+	color: #0e84b6;
+	
 }
 
 .lang-nav ul li button.language:hover {
@@ -1459,15 +1466,19 @@ header .logo a {
 		left: 25px;
 	}
 	.lang-nav {
-		width: 90px;
+		width: 110px;
 		right: 10px;
-		padding-top: 8px;
 	}
 	.lang-nav .lang-list {
 		padding-right: 8px;
+		margin-left: 0.5rem;
 	}
+
 	.lang-nav.closed {
-		height: 70px;
+		max-height: 50px;
+	}
+	.lang-nav .lang-list li {
+		height: 3.125rem;
 	}
 	.lang-nav ul li button img {
 		height: 20px;
