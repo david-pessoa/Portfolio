@@ -79,7 +79,7 @@
 				"description": "Ability to organize tasks and manage time efficiently"
 			}
 		},
-		"downloadBtn": "<a href='CV-file/Resume_David_Pessoa.pdf' target='_blank' title='Download CV' class='button button-primary'>Download CV</a>"
+		"downloadBtn": "<a href='CV-file/Resume_David_Pessoa.pdf' target='_blank' title='Download CV' class='button button-primary transparent-border'>Download CV</a>"
 	},
 	"portfolio": {
 		"subTitle": "Portfolio",
