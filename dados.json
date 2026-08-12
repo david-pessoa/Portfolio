@@ -143,11 +143,6 @@
 			{ "name": "Django", "iconPath": "./images/skills-icons/django.svg" },
 			{ "name": "Flask", "iconPath": "./images/skills-icons/flask.svg" },
 			{ "name": "Node.js", "iconPath": "./images/skills-icons/nodejs.png" },
-			{
-				"name": ".NET Core",
-				"iconPath": "./images/skills-icons/dotnetcore-original.svg"
-			},
-			{ "name": "C#", "iconPath": "./images/skills-icons/csharp-original.svg" },
 			{ "name": "AWS", "iconPath": "./images/skills-icons/aws.svg" },
 			{ "name": "Docker", "iconPath": "./images/skills-icons/docker.webp" },
 			{
