@@ -1,12 +1,22 @@
 {
 	"projetos": [
 		{
-			"nome": "Edify",
+			"nome": "Edify - React + Node.js",
+			"miniDescricao": "Esta é a versão do Edify desenvolvida com React no front-end e Node.js no back-end que permite professores publicarem conteúdos de suas aulas. A plataforma tem como objetivo facilitar o aprendizado contínuo, permitindo que estudantes consultem materiais a qualquer momento e de qualquer lugar. Clique aqui para saber mais!",
+			"linkExternoEhVideo": false,
+			"linkExterno": "",
+			"imagemHome": "images/portfolio/edify-react-homepage.png",
+			"imagemHero": "../images/projetos-page/edify-react-aluno.png",
+			"skills": "React.js;Node.js;TypeScript;Express.js;TypeORM;PostgreSQL;",
+			"descricao": "Em setembro de 2026, concluí o desenvolvimento da versão do Edify utilizando React e Node.js. Anteriormente, havia desenvolvido uma versão do aplicativo utilizando OutSystems, e este projeto representa uma nova implementação da plataforma utilizando tecnologias modernas de desenvolvimento web.\nO Edify é uma plataforma voltada para escolas públicas que permite que professores publiquem conteúdos e materiais de suas aulas na internet, facilitando o acesso dos estudantes aos conteúdos de forma contínua, a qualquer momento e de qualquer lugar.\nA aplicação conta com autenticação baseada em JWT e um sistema de controle de acesso baseado em funções (RBAC), com diferentes níveis de permissão: <ul><li><b>Aluno:</b>pode visualizar os conteúdos publicados e comentar nas publicações;</li><li><b>Professor:</b>possui as permissões de aluno e pode criar, editar e excluir posts, cadastrar e editar alunos e responder aos comentários em suas próprias publicações;</li><li><b>Administrador:</b>possui as permissões de professor e pode cadastrar professores e gerenciar os usuários da plataforma.</li></ul> Caso tenha interesse, acesse aqui <a href='https://github.com/david-pessoa/tech-challenge-frontend' target='_blank'>o repositório do projeto no GitHub</a>."
+		},
+		{
+			"nome": "Edify - Low Code",
 			"miniDescricao": "Edify é um aplicativo desenvolvido em OutSystems que permite a professores publicar conteúdos de suas aulas. A plataforma tem como objetivo facilitar o aprendizado contínuo, permitindo que estudantes consultem materiais a qualquer momento e de qualquer lugar. Este projeto marca minha primeira experiência com desenvolvimento low-code. Clique aqui para saber mais!",
 			"linkExternoEhVideo": false,
 			"linkExterno": "",
-			"imagemHome": "images/portfolio/edify.png",
-			"imagemHero": "../images/projetos-page/edify-post.png",
+			"imagemHome": "images/portfolio/edify-outsystems.png",
+			"imagemHero": "../images/projetos-page/edify-post-outsystems.png",
 			"skills": "OutSystems;Low Code;C#",
 			"descricao": "Hoje, professores da rede pública de educação muitas vezes não têm ferramentas para postarem suas aulas e transmitirem conhecimento para os alunos e alunas de forma prática, centralizada e tecnológica.\nPara solucionar esse problema, criei em grupo o Edify. Ele é um aplicativo de blogging dinâmico desenvolvido em OutSystems, plataforma Low Code, que permite a professores publicar conteúdos de suas aulas. A plataforma tem como objetivo facilitar o aprendizado contínuo, permitindo que estudantes consultem materiais a qualquer momento e de qualquer lugar. Além disso, o sistema conta com autenticação de usuários, não apenas para garantir segurança das informações, mas também para definir diferentes níveis de acesso à plataforma.\nOs perfis são organizados de forma hierárquica, de modo que cada nível possui todas as permissões do anterior, além de funcionalidades adicionais. <ul><li><b>Aluno: </b>Pode visualizar os posts com conteúdo das aulas;</li><li><b>Professor: </b>Possui todas as permissões do aluno e pode criar, editar excluir posts, além de cadastrar novos alunos no sistema;</li><li><b>Administrador: </b>Possui todas as permissões de professor e pode cadastrar novos professores no sistema e gerenciar os usuários do aplicativo.</li></ul>\nMeu papel no projeto foi modelar o banco de dados do OutSystems e realizar a integração entre back-end e front-end através das Service Actions."
 		},

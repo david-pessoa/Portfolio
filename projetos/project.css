@@ -7,13 +7,11 @@
 	text-align: center;
 	font-size: 8.4rem;
 	line-height: 1.071;
-	max-width: 900px;
 	margin-top: 0;
 	margin-bottom: 0.6rem;
-	margin-left: auto;
-	margin-right: auto;
 	color: var(--dark-blue);
 	padding-bottom: 5vh;
+	width: 100%;
 }
 
 #hero #projectImage {
@@ -62,10 +60,10 @@
 #skillsList li.css {
 	background-color: #1f72b6;
 }
-#skillsList li.javascript {
+#skillsList li.javascript, #skillsList li.express {
 	background-color: #f0db4f;
 }
-#skillsList li.javascript h3 {
+#skillsList li.javascript h3, #skillsList li.express h3 {
 	color: #323330;
 }
 #skillsList li.typescript {
@@ -120,6 +118,15 @@
 }
 #skillsList li.llm {
 	background-color: #494949;
+}
+#skillsList li.node {
+	background-color: #7CB801;
+}
+#skillsList li.node h3 {
+	color: #414337;
+}
+#skillsList li.typeorm {
+	background-color: #EA4801;
 }
 
 /* Others */

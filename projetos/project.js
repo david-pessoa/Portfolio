@@ -63,7 +63,10 @@ export function loadProjectPage() {
 		'C/C++': 'cpp',
 		OutSystems: 'outsystems',
 		'Low Code': 'lowcode',
-		'C#': 'csharp'
+		'C#': 'csharp',
+		'Node.js': 'node',
+		'Express.js': 'express',
+		'TypeORM': 'typeorm',
 	};
 
 	fetch('../dados.json')
